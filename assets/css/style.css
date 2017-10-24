@@ -21,6 +21,7 @@ section {
 
 h1 {
     font-size: 28px;
+    font-weight: bold;
   }
 
 h2 {
@@ -28,9 +29,17 @@ h2 {
     font-size: 24px;
   }
 
+.border-h2 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+  margin: 5px 10px 10px 0px;
+}
+
 h3 {
     color: #4aaaa5;
     font-size: 22x;
+    font-weight: bold;
   }
 
 a:link {
@@ -97,20 +106,7 @@ footer {
     padding: 10px 10px 10px 10px;
   }
 
-  #about-me {
-    float: left;
-    margin: 20px 10px 20px 10px;
-    padding: 20px;
-    width: 550px;
-    height: 500px;
-    background: white;
-  }
-
-  /* #about-me-image {  } */
-
-  /* #about-me-text {  } */
-
-  #connect-with-me {
+  .connect-with-me {
     float: right;
     margin: 20px 10px 20px 10px;
     padding: 20px;
@@ -124,4 +120,115 @@ footer {
     width: 100%;
   }
 
-  /* #contact-form { } */
+  #about-me {
+    float: left;
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    width: 550px;
+    height: 500px;
+    background: white;
+  }
+
+  /* #about-me-image {  } */
+
+  /* #about-me-text {  } */
+
+/* CSS Styling for Contact page. */
+  #contact-me {
+    float: left;
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    width: 550px;
+    height: 500px;
+    background: white;
+  }
+
+  #contact-form {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  .form-text-style {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    width: 525px;
+  }
+
+  #submit-button {
+    color: white;
+    background: #4aaaa5;
+    padding: 10px 30px 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+
+/* CSS styling for the Portfolio page. */
+
+  #portfolio {
+    float: left;
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    width: 550px;
+    height: 500px;
+    background: white;
+  }
+
+  #portfolio-image-1left {
+    float: left;
+    align-content: center;
+    /* Added these for responsive sizing???? */
+    max-width: 100%;
+    height: auto;
+  }
+
+  #portfolio-image-1right {
+    float: right;
+    margin-right: 10px;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #portfolio-image-2left {
+    float: left;
+    position: relative;
+    bottom: 20px;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #portfolio-image-2right {
+    float: right;
+    position: relative;
+    bottom: 20px;
+    margin-right: 10px;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #portfolio-image-3left {
+    float: left;
+    position: relative;
+    bottom: 20px;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .portfolio-labels {
+    width: 240px;
+    height: 30px;
+    padding: 10px 5px 0px 5px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    background: #4aaaa5;
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }

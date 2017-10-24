@@ -23,12 +23,28 @@
         </header>
     
         <section class="content-container">
-            <section id="contact-form">
-                <h2>Contact</h2>
-            <form></form>
+            <section id="contact-me">
+                <div class="border-h2"><h2>Portfolio</h2></div>
+                <div id="contact-form">
+                        <!-- Need Form action location! Method Post or Get? -->
+                        <form action="#" method="post">
+                            Name<br>
+                            <input class="form-text-style" type="text" name="name" value="John Smith">
+                            <br><br>
+                            Email<br>
+                            <input class="form-text-style" type="text" name="email" value="example@gmail.com">
+                            <br><br>
+                            Message<br>
+                            <!-- Textarea is supposed to expand 10 rows down. Not working! -->
+                            <input class="form-text-style" type="textarea" name="message" rows="10" columns="30">
+                            <br><br>
+                            <input id="submit-button" type="submit" value="Submit">
+                        </form> 
+                </div>
             </section>
+
             
-            <aside id="connect-with-me">
+            <aside class="connect-with-me">
                 <h3>Connect with Me</h3>
                     <div class="icons-container">
                         <a href="https://github.com/natroberts19" target="_blank" style="text-decoration:none">   
