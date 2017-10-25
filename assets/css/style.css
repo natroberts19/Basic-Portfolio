@@ -29,6 +29,12 @@ h2 {
     font-size: 24px;
   }
 
+  h3 {
+    color: #4aaaa5;
+    font-size: 22x;
+    font-weight: bold;
+  }
+
 .border-h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -36,11 +42,11 @@ h2 {
   margin: 5px 10px 10px 0px;
 }
 
-h3 {
-    color: #4aaaa5;
-    font-size: 22x;
-    font-weight: bold;
-  }
+.border-h3 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+}
 
 a:link {
     color: gray;
@@ -108,7 +114,7 @@ footer {
 
   .connect-with-me {
     float: right;
-    margin: 20px 10px 20px 10px;
+    margin: 20px 10px 10px 10px;
     padding: 20px;
     text-align: center;
     width: 270px;
@@ -129,9 +135,17 @@ footer {
     background: white;
   }
 
-  /* #about-me-image {  } */
+  #about-me-image {
+    float: left;
+    width: 250px;
+    height: 250px;
+    }
 
-  /* #about-me-text {  } */
+  #about-me-text { 
+    float: right;
+    width: 300px;
+    height: 250px;
+   }
 
 /* CSS Styling for Contact page. */
   #contact-me {
