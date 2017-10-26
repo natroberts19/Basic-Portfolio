@@ -24,50 +24,50 @@ h1 {
     font-weight: bold;
   }
 
-h2 {
-    color: #4aaaa5;
-    font-size: 24px;
-  }
 
-  h3 {
-    color: #4aaaa5;
-    font-size: 22x;
-    font-weight: bold;
-  }
-
-.border-h2 {
+.h2 {
+  color: #4aaaa5;
+  font-size: 18px;
+  font-weight: bold;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #cccccc;
-  margin: 5px 10px 10px 0px;
+  padding-bottom: 5px;
+  height: 25px;
+  width: 550px;
 }
 
-.border-h3 {
+.h3 {
+  color: #4aaaa5;
+  font-size: 16x;
+  font-weight: bold;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #cccccc;
+  height: 25px;
+  width: 270px;
 }
 
 a:link {
-    color: gray;
+  color: gray;
 }
 
 a:visited {
-    color: gray;
+  color: gray;
 }
 
 p {  
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
   }
 
 footer {
     width: 100%;
     height: 17px;
-    /* border-top-style: solid; */
-    /* border-top: 10px; */
-    /* border-top-color: #4aaaa5; */
-    padding: 40px 10px 20px 20px;
+    border-top-style: solid;
+    border-top-width: thick;
+    border-top-color: #4aaaa5;
+    padding: 20px 10px 20px 20px;
     background: #666666;
     color: #ffffff;
     text-align: center;
@@ -93,7 +93,7 @@ footer {
       color: white;
   }
 
-.nav-menu {
+#nav-menu {
     float: right;
     width: 250px;
     height: 50px;
@@ -105,65 +105,96 @@ footer {
     font-size: 16px;
   }
 
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+  }
+
+
 .content-container {
     margin: auto;
     width: 960px;
-    height: 700px;
+    height: 600px;
     padding: 10px 10px 10px 10px;
   }
 
-  .connect-with-me {
+.connect-with-me {
     float: right;
     margin: 20px 10px 10px 10px;
     padding: 20px;
     text-align: center;
     width: 270px;
-    height: 150px;
+    height: 130px;
     background: white;
   }
 
-  #icons-container {
-    width: 100%;
+#icons-container {
+   margin-top: 20px;
+   padding: 20px;
+   width: 100%;
   }
 
-  #about-me {
+  .icon {
+    margin: 20px 5px 20px 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+#about-me {
     float: left;
     margin: 20px 10px 20px 10px;
     padding: 20px;
     width: 550px;
-    height: 500px;
+    height: 525px;
     background: white;
   }
+/* 
+.text-wrap {
 
-  #about-me-image {
+} */
+
+
+#image-container {
     float: left;
+    padding-top: 30px;
     width: 250px;
     height: 250px;
-    }
+  }
 
-  #about-me-text { 
+#about-me-image {
+  width:190px;
+  height:230px;
+  border:0;
+}
+
+#about-me-text { 
     float: right;
+    padding-top: 15px;
     width: 300px;
     height: 250px;
    }
 
-/* CSS Styling for Contact page. */
-  #contact-me {
+/* Following is the CSS Styling for Contact page. */
+#contact-me {
     float: left;
     margin: 20px 10px 20px 10px;
     padding: 20px;
     width: 550px;
-    height: 500px;
+    height: 525px;
     background: white;
   }
 
-  #contact-form {
+#contact-form {
+    padding-top: 30px;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
   }
 
-  .form-text-style {
+.form-text-style {
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -171,7 +202,17 @@ footer {
     width: 525px;
   }
 
-  #submit-button {
+#form-text-style-message {
+  color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  width: 525px;
+  height: 170px;
+}
+
+
+#submit-button {
     color: white;
     background: #4aaaa5;
     padding: 10px 30px 10px 30px;
@@ -179,28 +220,31 @@ footer {
     font-size: 18px;
   }
 
-/* CSS styling for the Portfolio page. */
-
+/* Following is the CSS styling for the Portfolio page. */
+ 
   #portfolio {
     float: left;
     margin: 20px 10px 20px 10px;
     padding: 20px;
     width: 550px;
-    height: 500px;
+    height: 525px;
     background: white;
   }
 
   #portfolio-image-1left {
     float: left;
+    padding: 0px 5px 0px 15px;
+    margin-top: 10px;
     align-content: center;
-    /* Added these for responsive sizing???? */
     max-width: 100%;
     height: auto;
   }
-
+    
   #portfolio-image-1right {
     float: right;
-    margin-right: 10px;
+    padding: 0px 5px 0px 5px;
+    margin-top: 10px;
+    margin-right: 5px;
     align-content: center;
     max-width: 100%;
     height: auto;
@@ -209,7 +253,7 @@ footer {
   #portfolio-image-2left {
     float: left;
     position: relative;
-    bottom: 20px;
+    padding: 0px 5px 0px 15px;
     align-content: center;
     max-width: 100%;
     height: auto;
@@ -218,8 +262,8 @@ footer {
   #portfolio-image-2right {
     float: right;
     position: relative;
-    bottom: 20px;
-    margin-right: 10px;
+    padding: 0px 5px 0px 5px;
+    margin-right: 5px;
     align-content: center;
     max-width: 100%;
     height: auto;
@@ -228,14 +272,14 @@ footer {
   #portfolio-image-3left {
     float: left;
     position: relative;
-    bottom: 20px;
+    padding: 0px 5px 0px 15px;
     align-content: center;
     max-width: 100%;
     height: auto;
   }
-
+  
   .portfolio-labels {
-    width: 240px;
+    width: 210px;
     height: 30px;
     padding: 10px 5px 0px 5px;
     position: relative;
@@ -246,3 +290,4 @@ footer {
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+ 
